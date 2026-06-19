@@ -1,0 +1,334 @@
+body {
+    background-image:url("../imagenes/fondo2.png");
+    background-size:cover;
+    background-position:center;
+    font-family: var(--font-main);
+}
+
+.content-area, .calendario-panel, .devoluciones-panel {
+    background: var(--color-principal);
+    border-radius: 20px;
+}
+
+.sidebar {
+    background: rgb(255, 255, 255);
+    border-right: 1px solid var(--color-border); 
+}
+
+.logo {
+    border-radius: 20px;
+    background: none;
+}
+
+/*MENU*/
+.menu-items li {
+    list-style: none;
+}
+.menu-items a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    background: #f2f2f2; 
+    color: var(--color-uno); 
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.menu-items li.active a {
+    background: #f7e8c0; 
+    color: var(--color-uno);
+}
+.menu-items a:hover {
+    background: #f2f2f2;
+    color: rgb(104, 67, 28);
+}
+/*---*/
+
+/*BUSCADOR*/
+.search-box input {
+    font-family: var(--font-main);
+    color: var(--color-tres);
+    border: 4px solid var(--color-uno);
+    border-radius: 30px;
+    background: #f1f1f1;
+    font-size: 16px;
+    font-weight: 500;
+}
+.search-box i {
+    font-size: 22px;
+    color: var(--color-uno);
+}
+.search-box input:focus {
+    outline: none;
+    border: 4px solid var(--color-principal);
+    box-shadow: 0 0 10px rgba(212, 140, 58, 0.5);
+}
+.search-box a:hover, .search-box.active a {
+    background: #f2f2f2;
+    color: rgb(250, 208, 119);
+}
+/*---*/
+
+/*CATEGORIA*/
+.categoria {
+    background: #ffa4a4;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.categorias a{
+    color: rgb(155, 67, 82);
+}
+.categoria i {
+    font-size: 30px;
+}
+/*---*/
+
+/*PRODUCTO*/
+.producto {
+    background: #ffead4;
+    border-radius: 20px;
+}
+.producto img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+.producto:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s ease; 
+}
+/*---*/
+
+
+.calendar-header {
+    font-weight: 600;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.devolucion {
+    background: var(--color-uno);
+    color: white;
+    font-weight: bold;
+}
+
+.btn-ver {
+    background: var(--color-uno);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*RESERVAR*/
+.reservar-item{
+    background: beige;
+    border-radius: 20px;
+    transition: transform 0.2s ease;
+}
+.res-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: #8b8b8b;
+    transition: scale 0.2s ease;
+}
+.res-btn.active-bookmark {
+    color: #4b8aff; 
+}
+.res-btn:hover {
+    transform: scale(1.2);
+}
+/*--*/
+
+/*FAVORITOS*/
+.fav-item,.historial-item{
+    background: #f7e8c0; 
+    border-radius: 20px;
+    transition: transform 0.2s ease;
+}
+.fav-item:hover, .reservar-item:hover{
+    transform: translateX(5px); 
+}
+.fav-info strong, .reservar-info strong, .historial-info strong{
+    color: var(--color-tres); 
+    font-size: 16px;
+}
+.fav-info span , .reservar-info span, .historial-info span{
+    color: var(--color-uno); 
+    font-size: 13px;
+}
+.fav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: #8b8b8b;
+    transition: scale 0.2s ease;
+}
+.fav-btn.active-heart {
+    color: #ff4141; 
+}
+.fav-btn:hover {
+    transform: scale(1.2);
+}
+/*---*/
+/*CONFIGURACION*/
+.config-box {
+    background-color: var(--color-principal); 
+}
+.config-box h3 {
+    color: #4a381e;
+    font-size: 24px;
+}
+
+/*PERFIL*/
+.profile-avatar {
+    background-color: #3498db; 
+    color: white;
+    border: 3px solid #ffffff; 
+}
+.user-display-name {
+    font-size: 20px;
+    color: #4a381e;
+    font-weight: 600;
+}
+.user-email {
+    font-size: 14px;
+    color: #6d5331; 
+}
+/*---*/
+
+/*BOTON DE CERRAR SESION*/
+.btn-logout {
+    background-color: #ff4b4b; 
+    color: var(--color-principal);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+.btn-logout:hover {
+    background-color: #e03737;
+    transform: translateY(-2px);
+}
+
+/*VER LIBRO*/
+.book-detail-container {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+.book-cover-wrapper {
+    background: #fff6eb;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: inset 0 0 15px rgba(139, 111, 71, 0.1);
+}
+.book-cover-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.btn-icon-action, .btn-icon-action-reservar{
+    background: #f5f5f7;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #b1b1b1;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+.btn-icon-action:hover {
+    background: #ffebee;
+    color: #ff4d4d;
+    transform: scale(1.05);
+}
+.book-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    padding-right: 90px;
+}
+.book-author {
+    font-size: 18px;
+    color: #8B6F47;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.book-price {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+.book-rating {
+    color: #ffb300;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.rating-count {
+    font-size: 13px; 
+    color: #888; 
+}
+.book-description-box {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+.box-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #755a3b;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.btn-pay-submit {
+    background-color: rgb(243, 188, 104);
+    color: #ffffff;
+    border: none;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 15px;
+    box-shadow: 0 4px 12px rgba(139, 111, 71, 0.2);
+    transition: all 0.2s ease;
+}
+.btn-pay-submit:hover {
+    background-color: #ffe057;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(139, 111, 71, 0.3);
+}
+
+.btn-icon-action-reservar:hover{
+    background: #ffebee;
+    color: #4b8aff;
+    transform: scale(1.05);
+}
+
+.btn {
+    background: var(--color-uno);
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 10px;
+    text-decoration: none
+}
+.btn i{
+    width: 15px;
+    height: 35px;
+}

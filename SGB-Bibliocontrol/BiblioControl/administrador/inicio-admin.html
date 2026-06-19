@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiblioControl</title>
+    <link rel="icon" href="../imagenes/logo.png" type="image/png" sizes="60x60">
+    <link rel='stylesheet' href='../css/variables.css'>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+    <aside class="sidebar">
+        <nav class="menu">
+            <a href="admin.html" class="logo">
+                <img src="../imagenes/isl.png" alt="Logo">
+            </a>
+            <ul class="menu-items">
+                <li class="active"><a href="inicio-admin.html"><i class="fa-solid fa-house"></i> <span>Inicio</span></a></li>
+                <li><a href="libros.html"><i class="fa-solid fa-book"></i> <span>Libros</span></a></li>
+                <li><a href="usuarios.html"><i class="fa-solid fa-users"></i> <span>Usuarios</span></a></li>
+                <li><a href="prestamos.html"><i class="fa-solid fa-arrows-rotate"></i> <span>Préstamos</span></a></li>
+                <li><a href="reportes.html"><i class="fa-solid fa-chart-simple"></i> <span>Reportes</span></a></li>
+                <li><a href="configuracion.html"><i class="fa-solid fa-gear"></i> <span>Configuración</span></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="dashboard-body">
+        <main class="dashboard">
+            <div class="content-area">
+                <h2>¡Bienvenido, Administrador!</h2>
+                <h4>Resumen general</h4>
+            <div class="cards-grid">
+                <div class="card-dashboard">
+                    <h3>1200</h3>
+                    <span>Total de libros</span>
+                </div>
+                <div class="card-dashboard prestados">
+                    <h3>342</h3>
+                    <span>Libros prestados</span>
+                </div>
+                <div class="card-dashboard usuarios">
+                    <h3>544</h3>
+                    <span>Usuarios registrados</span>
+                </div>
+                <div class="card-dashboard atrasados">
+                    <h3>18</h3>
+                    <span>Devoluciones atrasadas</span>
+                </div>
+            </div>
+        </div>
+
+            <div class="subgrids-container">
+                
+                <div class="content-area">
+                    <div class="section-header">
+                        <h4>Libros más prestados</h4>
+                    </div>
+                    <div class="admin-table-wrapper">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Libro</th>
+                                    <th>Préstamos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Cien años de soledad</td><td>45</td></tr>
+                                <tr><td>1984</td><td>38</td></tr>
+                                <tr><td>Don Quijote</td><td>32</td></tr>
+                                <tr><td>El Principito</td><td>28</td></tr>
+                                <tr><td>La Odisea</td><td>25</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="lateral">
+                    
+                    <div class="content-area">
+                        <div class="section-header">
+                            <h4> Préstamos por estado</h4>
+                        </div>
+                        <ul class="panel-list">
+                            <li><span>Devueltos:</span> <strong>180</strong></li>
+                            <li><span>Prestados:</span> <strong>342</strong></li>
+                            <li><span>Atrasados:</span> <strong>18</strong></li>
+                            <li><span>Reservados:</span> <strong>2</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="content-area">
+                        <div class="section-header">
+                            <h4>Actividad reciente</h4>
+                        </div>
+                        <ul class="panel-list">
+                            <li>Se prestó "Cien años de soledad"</li>
+                            <li>Se devolvió "Don Quijote"</li>
+                            <li>Nueva usuaria registrada</li>
+                            <li>Libro reservado</li>
+                            <li>Devolución atrasada detectada</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+</div>
+
+</body>
+</html>

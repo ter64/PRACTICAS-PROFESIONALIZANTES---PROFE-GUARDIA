@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Reportes y Deudas - BiblioControl</title>
+    <link rel="icon" href="../imagenes/logo.png" type="image/png" sizes="60x60">
+    <link rel='stylesheet' href='../css/variables.css'>
+    <link rel='stylesheet' href='../css/admin.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+    <aside class="sidebar">
+        <nav class="menu">
+            <a href="admin.html" class="logo">
+                <img src="../imagenes/isl.png" alt="Logo">
+            </a>
+            <ul class="menu-items">
+                <li><a href="inicio-admin.html"><i class="fa-solid fa-house"></i> <span>Inicio</span></a></li>
+                <li><a href="libros.html"><i class="fa-solid fa-book"></i> <span>Libros</span></a></li>
+                <li><a href="usuarios.html"><i class="fa-solid fa-users"></i> <span>Usuarios</span></a></li>
+                <li><a href="prestamos.html"><i class="fa-solid fa-arrows-rotate"></i> <span>Préstamos</span></a></li>
+                <li class="active"><a href="reportes.html"><i class="fa-solid fa-chart-simple"></i> <span>Reportes</span></a></li>
+                <li><a href="configuracion.html"><i class="fa-solid fa-gear"></i> <span>Configuración</span></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="dashboard-body">
+
+        <main class="dashboard">
+            <section class="content-area">
+                <div class="section-header">
+                    <h2>Reportes y Deudas</h2>
+                </div>
+                <div class="section-header">
+                    <h4><i class="fa-solid fa-triangle-exclamation"></i> Estado Financiero y Alertas</h4>
+                </div>
+                <div class="admin-table-wrapper">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Usuario</th>
+                                <th>Estado</th>
+                                <th>Deuda</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ticket-bold">Brenda</td>
+                                <td><span class="badge badge-danger">Reportado</span></td>
+                                <td class="text-danger">$150000</td>
+                            </tr>
+                            <tr>
+                                <td class="ticket-bold">Anahi</td>
+                                <td><span class="badge badge-warning">Próximo a reporte</span></td>
+                                <td class="text-success">$0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    min-height: 100%;
+}
+
+.sidebar {
+    padding: 10px 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.sidebar img {
+    width: 70px;
+}
+
+.dashboard-body {
+    display: flex;
+    flex-direction: column;
+    padding: 25px; 
+    height: 100vh; 
+}
+
+.topbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 11px;    
+    margin-bottom: 10px; 
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/*MENU*/
+.menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.menu-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 25px; 
+    padding: 0;
+    margin: 0;
+}
+/*---*/
+
+/*BUSCADOR*/
+.search-box {
+    width: 850px;
+    position: relative;
+    margin-bottom: 18px;
+}
+.search-box input {
+    width: 98.8%; 
+    padding: 14px 16px 14px 44px;
+}
+.search-box i {
+    position: absolute;
+    right: 1.8rem;
+    top:50%;
+    transform: translateY(-50%);
+}
+/*---*/
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 20px;
+    align-items: start;
+}
+
+.content-area {
+    padding: 20px;
+    height: fit-content;
+}
+
+/*CATEGORIAS*/
+.categorias {
+    display: flex;
+    gap: 17px;
+    margin-bottom: 30px;
+}
+.categoria {
+    padding: 1px ;
+    text-align: center;
+    width: 85px;
+    cursor: pointer;
+}
+.categoria span {
+    font-size: 13px;  
+    font-weight: 500;
+}
+.categoria i {
+    font-size: 24px;    
+    display: block;
+    margin-bottom: 6px;
+}
+/*---*/
+
+/*LIBROS*/
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+}
+.producto {
+    padding: 15px;
+    text-align: center;
+}
+.producto img {
+    width: 100%;
+    height: 220px;
+}
+/*---*/
+
+.dashboard-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -85px;
+}
+
+/*CALENDARIO*/
+.calendario-panel, .devoluciones-panel {
+    padding: 20px;
+    height: fit-content;
+}
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/*---*/
+
+/*VER CATEGORIAS Y LIBROS*/
+.btn-ver {
+    padding: 1px 15px;
+}
+
+.dashboard--full {
+    grid-template-columns: 1fr !important; 
+}
+
+/*FAVORITOS*/
+.fav-lista, .historial-lista{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+.fav-item, .historial-item{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 25px;
+}
+.fav-info, .historial-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+/*---*/
+
+
+/*RESERVAS*/
+.reservar-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+.reservar-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+}
+.reservar-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+/*---*/
+
+.separador {
+    border: none;
+    border-top: 2px solid #e0e0e0;
+    margin: 5px 0;
+}
+
+/*CONFIGURACION*/
+.config-box {
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh; 
+    justify-content: space-between; 
+}
+.config-actions {
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%;
+}
+/*boton de cerrar sesion*/
+.btn-logout {
+    padding: 12px 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*PERFIL*/
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.profile-avatar img {
+    font-size: 100px;
+}
+.profile-data {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/*VER LIBRO*/
+.book-page-layout {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.book-detail-container {
+    flex: 2;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.book-main-info {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.book-cover-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 220px;
+    max-width: 280px;
+}
+.book-details-text {
+    flex: 2;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.action-floating-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+}

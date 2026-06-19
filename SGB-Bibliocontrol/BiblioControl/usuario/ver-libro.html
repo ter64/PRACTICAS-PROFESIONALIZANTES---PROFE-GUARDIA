@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Libro - BiblioControl</title>
+    <link rel="icon" href="../imagenes/logo.png" type="image/png" sizes="10x10">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/layout.css"> 
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+    <aside class="sidebar">
+        <nav class="menu">
+            <a href="inicio.html" class="logo">
+                <img src="../imagenes/isl.png" width="24">
+            </a>
+            <ul class="menu-items">
+                <li class="active"><a href="inicio.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="favoritos.html"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="reservar.html"><i class="fa-solid fa-bookmark"></i></a></li>
+                <li><a href="historial.html"><i class="fa-solid fa-clock"></i></a></li>
+                <li><a href="config.html"><i class="fa-solid fa-gear"></i></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <div class="dashboard-body">
+        <main class="dashboard">
+            <div class="book-page-layout">
+                
+                <div class="book-detail-container">
+                <div class='table'>
+                    <a class='btn' href='inicio.html'>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <div class="book-main-info">
+                        <div class="book-cover-wrapper">
+                            <img src="../imagenes/libro1.png" alt="Portada del Libro">
+                        </div>
+
+                        <div class="book-details-text">
+                            <div class="action-floating-buttons">
+                                <button class="btn-icon-action" title="Agregar a Favoritos"><i class="fa-solid fa-heart"></i></button>
+                                <button class="btn-icon-action-reservar" title=" Reservar Libro"><i class="fa-solid fa-bookmark"></i></button>
+                            </div>
+                            
+                            <div>
+                                <h1 class="book-title">Ejemplo</h1>
+                                <p class="book-author">por Autor</p>
+                                
+                                <div class="book-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span class="rating-count"> (5.0 / 5)</span>
+                                </div>
+
+                            </div>
+
+                            <div class="book-price">$15.000</div>
+                            <button class="btn-pay-submit" onclick="buscar()">Pagar Libro</button>
+                            
+                            <script>
+                                function buscar() {
+                                    alert("Ticket de compra");
+                                }
+                            </script>
+
+                    <div class="book-description-box">
+                        <h3 class="box-title">Descripción</h3>
+                        <p>...</p>
+                    </div>
+
+                    <div class="book-description-box">
+                        <h3 class="box-title">Reseña Reciente</h3>
+                        <p>...</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+:root{
+    --color-principal:white;
+    --color-secundario:#986534;
+    --color-border:#E5E5E5;
+    --shadow:0 4px 12px rgba(0,0,0,.08);
+    --radius:15px;
+    --font-main:'Poppins', sans-serif;
+    --color-uno:#8B6F47;
+    --color-dos: #694b29;
+    --color-tres: #4a381e;
+}
+h1{color: var(--color-dos);}
+h2{color: var(--color-secundario);}
+h3{color: var(--color-dos);}
+h5{color: #6d5331;}
+h4{color: var(--color-uno);}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiblioControl</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/png" sizes="60x60">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="container">
+        <div class="container-form">
+        <!-- FORMULARIO DE INICIO DE SESIÓN -->
+        <form class="sign-in" id="form-login">
+            <h2>Iniciar Sesión</h2>
+            <span>Use Su Correo y Contraseña</span>
+
+            <!--CORREO -->
+            <div class="container-input">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" placeholder="Email" id="login-email" required>
+            </div>
+
+            <!--CONTRASEÑA -->
+            <div class="container-input">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" placeholder="Password" id="login-password" required>
+            </div>
+
+            <!--RECUPERACIÓN DE CONTRASEÑA -->
+            <a href="recuperar.html">¿Olvidaste Tu Contraseña?</a>
+            <button type="submit" class="button">
+                Iniciar Sesión
+            </button>
+        </form>
+        </div>
+
+        <!-- FORMULARIO DE REGISTRO -->
+        <div class="container-form">
+            <form class="sign-up" action="usuario/inicio.html">
+
+                <h2>Registrarse</h2>
+                <span>Use Su Correo Electronico Para Registrarse</span>
+
+                <!--NOMBRE -->
+                <div class="container-input">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text" placeholder="Nombre">
+                </div>
+
+                <!--CORREO -->
+                <div class="container-input">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="text" placeholder="Email">
+                </div>
+
+                <!-- CONTRASEÑA -->
+                <div class="container-input">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" placeholder="Password">
+                </div>
+
+                <!-- BOTÓN DE REGISTRO -->
+                <button type="submit" class="button">
+                    Registrase
+                </button>
+
+            </form>
+        </div>
+
+        <!-- PANEL DE BIENVENIDA Y CAMBIO ENTRE LOGIN Y REGISTRO -->
+        <div class="container-welcome">
+            <div class="welcome-sign-up welcome">
+                <h3>¡Bienvenido!</h3>
+                <p>Ingrese Sus Datos Personales Para Usar Todas Las Funciones Del Sitio</p>
+
+                <button class="button" id="btn-sign-up">
+                    Registrarse
+                </button>
+            </div>
+            <div class="welcome-sign-in welcome">
+                <h3>¡Hola!</h3>
+                <p>Registrese Con Todos Sus Datos Para Usar Todas Las Funciones Del Sitio</p>
+
+                <button class="button" id="btn-sign-in">
+                    Iniciar Sesión
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPT QUE CONTROLA LA ANIMACIÓN ENTRE LOGIN Y REGISTRO -->
+    <script src="js/script.js"></script>
+
+    <!-- LIBRERÍA DE ICONOS IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
